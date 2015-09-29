@@ -72,25 +72,3 @@ vector<int> findAllSolutions (vector<int> array)
 
 	return solutions;
 }
-
-int main () 
-{
-	int size;
-	int temp;
-	cin >> size;
-
-	vector<int> array;
-
-	for (int i = 0; i < size; i++) 
-	{
-		cin >> temp;
-		array.push_back(temp);
-	}
-
-	cout << "Solutions:" << endl;
-	vector<int> solutions = findAllSolutions(array);
-
-	for (vector<int>::iterator it = solutions.begin(); it < solutions.end(); it++) {
-		cout << *it << endl;
-	}
-}
